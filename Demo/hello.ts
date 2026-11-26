@@ -1,19 +1,25 @@
-console.log("Hello World!");
+interface studentDetails {
+    studentName : string,
+    studentId : number,
+    studentSkills : string[],
+    isStudentPassed : boolean
+}
 
-//objects
- let Name:string = "Siddiq";
+let Std1: studentDetails = {
+    studentName : "siddiq",
+    studentId : 25,
+    studentSkills : ["coding", "playing"],
+    isStudentPassed : true
 
-let ProjectDetails:{
-    ProjectName : string,
-    ProjectDescription : string,
-    TeamSize : number,
-    isCompleted ?: boolean   // ? is an optinal property!
-} = {
-    ProjectName: "AI resume Generator",
-    ProjectDescription: "This project is used to generate the resume using AI.",
-    TeamSize : 5,
-    isCompleted : false
 };
 
 
-console.log("project details : ",ProjectDetails);
+let Std2 : studentDetails ={
+    studentName : "Farooq",
+    studentId : 30,
+    studentSkills : ["boxing", "playing"],
+    isStudentPassed : false
+}
+
+console.log("Student1", Std1);
+console.log("Student2", Std2);
