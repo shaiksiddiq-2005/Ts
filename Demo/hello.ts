@@ -1,27 +1,16 @@
 console.log("Hello World!");
 
-// String
-let myName:string = "Siddiq"; // It only accepts string values
-let college:string = "Raghu";
+// Arrays 
+// Normal Array
+let names = ["John", "Jane", "Alice", "Bob", 5555, 2222];  // It takes any types of Data types
+let ages =[10,20,330,40, "Hello"];  // It takes any types of Data types
 
-// Number 
-let age: number = 25; // It only accepts number values
-
-// Boolean
-let isStudent:boolean = true; // It only accepts boolean values
-
-let graduationYear:(undefined| number | string)= undefined;  // It accepts only number or string or undefined
-graduationYear = 2027;
-
-let storeAnyThing: any; // We can store any type of value in this variable called "storeAnyThing" because we have used "any" type.
-storeAnyThing = 25;
-storeAnyThing = true;
-
-console.log(`My name is ${myName}, I am from ${college} college, and my age is ${age}`)
-console.log("Im a student:",isStudent);
-console.log("My Graduation Year:",graduationYear);
-console.log("Any Value:",storeAnyThing);
- 
-console.log("Any Value:"); // ture 
+// TypeScript Array
+ let Names:String[]= ["Siddiq", "Farooq"]; // It only takes the data which mentioned particular data type.
+ let Ages:Number[]=[20,19];
 
 
+console.log("names: ", names);
+console.log("ages: ", ages);
+console.log("Names: ", Names);
+console.log("Ages: ", Ages);
