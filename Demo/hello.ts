@@ -22,4 +22,4 @@ let Std2 : studentDetails ={
 }
 
 console.log("Student1", Std1);
-console.log("Student2", Std2);
+console.log("Student2", Std2.studentSkills[0]);
