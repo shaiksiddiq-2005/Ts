@@ -1,25 +1,27 @@
-interface studentDetails {
-    studentName : string,
-    studentId : number,
-    studentSkills : string[],
-    isStudentPassed : boolean
+function sum(a:number,b:number):number{
+    return a+b
 }
-
-let Std1: studentDetails = {
-    studentName : "siddiq",
-    studentId : 25,
-    studentSkills : ["coding", "playing"],
-    isStudentPassed : true
-
-};
+console.log(`Addtion of a and b is:`+sum(100,200));
+console.log(`Addtion of a and b is:`+sum(500,200));
 
 
-let Std2 : studentDetails ={
-    studentName : "Farooq",
-    studentId : 30,
-    studentSkills : ["boxing", "playing"],
-    isStudentPassed : false
+
+
+function details(name:string, clg:string, rollNo: Number):string {
+    console.log(`I am ${name} from ${clg} my rollnumber is ${rollNo}`);
+    return "siddiq"; // error because we have used void for output type.
 }
+let x= details("siddiq","raghu",200);
+console.log(x)
 
-console.log("Student1", Std1);
-console.log("Student2", Std2.studentSkills[0]);
+
+
+
+
+// Void does not allows to retun the output
+function Intro(name:string, clg:string, rollNo: Number):void {
+    console.log(`I am ${name} from ${clg} my rollnumber is ${rollNo}`);
+    return "siddiq"; // error because we have used void for output type.
+}
+let y= Intro("siddiq","raghu",200);
+console.log(y)
