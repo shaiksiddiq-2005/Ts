@@ -21,7 +21,7 @@ console.log(`My name is ${myName}, I am from ${college} college, and my age is $
 console.log("Im a student:",isStudent);
 console.log("My Graduation Year:",graduationYear);
 console.log("Any Value:",storeAnyThing);
-
-console.log("Any Value:");
+ 
+console.log("Any Value:"); // ture 
 
 
